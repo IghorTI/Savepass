@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+    <ion-list lines="none">
+        
+    
+      <ion-card>
+
+      <ion-item>
+        <ion-label position="floating">Nome do App</ion-label>
+        <ion-input [(ngModel)]="newLogin.appName" type="text" placeholder="App"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Login</ion-label>
+        <ion-input   [(ngModel)]="newLogin.login" type="text" placeholder="Login" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Senha</ion-label>
+        <ion-input   [(ngModel)]="newLogin.password" type="password" placeholder="Senha"></ion-input>
+      </ion-item>
+   
+      <div margin text-right>
+      <ion-button (click)="clearInput()"  fill="outline" color="danger" id="btn-cancel">
+          <ion-icon slot="start" name="close"></ion-icon>Limpar
+      </ion-button>
+      
+   
+       <ion-button  (click)="addLogin()">
+          Adicionar
+          <ion-icon slot="start" name="Add"></ion-icon>
+        </ion-button>
+      </div>
+    </ion-card>
+    </ion-list>
+</ion-content>

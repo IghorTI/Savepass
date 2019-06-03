@@ -1,0 +1,7 @@
+{
+  "appId": "io.ionic.Savepass",
+  "appName": "Savepass",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}

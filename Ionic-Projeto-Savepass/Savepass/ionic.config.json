@@ -1,0 +1,8 @@
+{
+  "name": "Savepass",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}
